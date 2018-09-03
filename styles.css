@@ -1,0 +1,63 @@
+body {background-color: #336666;
+	margin-top: 2.5em;
+	border-top-style: dotted;
+	border-color: black: ;
+}
+
+#time_change_configuration{
+	margin-left: 30%;
+	font-family: Roboto;
+	font-size: 1.2em;
+	font-weight:bold;
+}
+
+#up_button {
+		margin-left:30%;
+}
+.btn_style {
+		margin-left:5%;
+		font-family:Roboto;
+		font-size:1.2em;
+        text-align: center;
+        background-color: beige;
+        height: 50px;
+        width: 100px;
+        border-radius: 5px;
+        display: inline-block;
+}
+#up_button {
+		margin-left:30%;
+}
+input {
+	font-family: Roboto;
+	font-size: 1.2em;
+	font-weight:bold;
+	text-align:center;
+	width: 100px;
+}
+
+#submit {
+	width: 250px;
+}
+
+.active {
+	color:red;
+}
+
+#timer_value {
+		margin-left:30%;
+		font-family:Roboto;
+		font-size:2.5em;
+        text-align: center;
+        background-color: salmon;
+        height: 1.5em;
+        width: 10em;
+        border-radius: 5px; 
+}
+
+.align_all {
+	margin-left:30%;
+	font-family: Roboto;
+	font-size: 3em;
+	font-weight:bold;
+}

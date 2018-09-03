@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="styles.css">
+	
+</head>
+<body>
+	<div id="Tool_config">
+    <form id="time_change_configuration">
+
+    	A single click is: Less than 
+    	<input type="number" id="single_click" name="Single_click" min=".1" step=".1" value=".2"> Seconds
+		<br><br>
+        Auto increment happens every  
+        <input type="number" id="standard_change_interval" name="standard_change_interval" min=".1" step=".1" value=".2"> Seconds
+		<br><br>
+		Auto increment Amount is 
+        <input type="number" id="standard_change_amount" name="standard_change_amount" min="5" step="5" value="10"> Seconds
+		<br><br>
+        Warp Speed: hold for  
+        <input type="number" id="delay_before_warp_speed" name="warp_speed_delay" min="10" step="5" value="30"> Seconds
+		<br><br>
+        Warp Speed: increment amount 
+        <input type="number" id="warp_increment" name="warp_speed_delay" min="5" step="5" value="30"> Seconds
+		<br><br>
+		<input type="submit" id="submit" value="Submit Configuration">
+    </form>
+	<br>
+	<button id="up_button" class="btn_style"> Increase </button>
+
+	<button id="down_button" class="btn_style"> Decrease </button>
+
+	<h2 class="align_all">Timer</h2>
+
+	<h1 id="timer_value" class="btn_style"></h1>
+	</div>	
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
