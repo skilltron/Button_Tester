@@ -7,7 +7,7 @@
 var set_time = 100;
 var single_click_time =.2;
 var change_speed =.2;
-var increment_amount =10;
+var increment_amount = 10;
 var delay_before_warp =30;
 var change_warp_speed =30;
 
@@ -20,12 +20,12 @@ $("#submit").on("click",function() {
   //prevents page refresh
   event.preventDefault();
   //sets variables
-  var single_click_time = ($("#single_click").val());
-  var change_speed = ($("#standard_change_interval").val());
-  var increment_amount = ($("#standard_change_amount").val());
-  var delay_before_warp = ($("#delay_before_warp_speed").val());
-  var change_warp_speed = ($("#warp_increment").val());
-  //alert( "configuration set");
+  single_click_time = ($("#single_click").val());
+  change_speed = ($("#standard_change_interval").val());
+  increment_amount = ($("#standard_change_amount").val());
+  delay_before_warp = ($("#delay_before_warp_speed").val());
+  change_warp_speed = ($("#warp_increment").val());
+  alert( "configuration set");
 });
 
 
@@ -45,7 +45,9 @@ $("#down_button").on("click",function (){
 });
 */
 
+// I am mistakenly concatenating for the set time
 $("#up_button").on("click",function(){
+  event.preventDefault();
   if (set_time + increment_amount <= 600){
     set_time = (set_time + increment_amount);
     document.getElementById("timer_value").innerHTML = set_time;
@@ -56,17 +58,28 @@ $("#up_button").on("click",function(){
 });
 
 
-
-
-$("#down_button").on('mousedown mouseup', function mouseState(e) {
-    event.preventDefault;
-    if ((e.type == "mousedown") && ((set_time - increment_amount) >= 0)) {
-        setTimeout(200);
-        set_time = (set_time - increment_amount);
-        document.getElementById("timer_value").innerHTML = set_time;
-        console.log("hold");
-    }
+$("#down_button").on("click",function(){
+  event.preventDefault();
+  if (set_time - increment_amount >= 0){
+    set_time = (set_time - increment_amount);
+    document.getElementById("timer_value").innerHTML = set_time;
+  }
+  else{
+  
+  }
 });
+
+
+
+// $("#down_button").on('mousedown mouseup', function mouseState(e) {
+//     event.preventDefault;
+//     if ((e.type == "mousedown") && ((set_time - increment_amount) >= 0)) {
+//         setTimeout(200);
+//         set_time = (set_time - increment_amount);
+//         document.getElementById("timer_value").innerHTML = set_time;
+//         console.log("hold");
+//     }
+// });
 
 
 
